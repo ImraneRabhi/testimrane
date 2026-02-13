@@ -7,76 +7,112 @@
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background-color: #111;
-            color: white;
-            text-align: center;
+            background: linear-gradient(#111, #222);
+            color: #eee;
         }
 
         header {
-            background: black;
-            padding: 20px;
+            background: #000;
+            padding: 30px 20px;
+            text-align: center;
+            border-bottom: 4px solid #7f5cff;
         }
 
-        h1 {
+        header h1 {
             color: #7f5cff;
+            font-size: 60px;
+            margin: 0;
+            text-shadow: 2px 2px 5px #000;
         }
 
-        img {
-            width: 300px;
-            margin-top: 20px;
-            border-radius: 10px;
+        main {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
         }
 
-        section {
-            padding: 20px;
+        section h2 {
+            color: #7f5cff;
+            font-size: 36px;
+            margin-bottom: 20px;
+            text-align: center;
         }
 
-        footer {
-            background: black;
-            padding: 10px;
-            margin-top: 20px;
-            font-size: 14px;
-            color: gray;
+        section p {
+            line-height: 1.6;
+            font-size: 18px;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .image-container {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .image-container img {
+            max-width: 80%;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.7);
         }
 
         button {
-            padding: 10px 20px;
+            display: block;
+            margin: 30px auto;
+            padding: 15px 35px;
             background-color: #7f5cff;
             border: none;
             color: white;
-            border-radius: 5px;
+            font-size: 18px;
+            border-radius: 8px;
             cursor: pointer;
+            transition: 0.3s;
         }
 
         button:hover {
             background-color: #5a3fd6;
+            transform: scale(1.05);
+        }
+
+        footer {
+            background: #000;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+            color: gray;
+            border-top: 4px solid #7f5cff;
+            font-size: 14px;
         }
     </style>
 </head>
-
 <body>
 
 <header>
     <h1>Darksiders 2</h1>
 </header>
 
-<section>
-    <h2>Om spillet</h2>
-    <p>
-        Darksiders 2 handler om Death, en af Apokalypsens fire ryttere.
-        Han kæmper for at rense sin bror War's navn og redde menneskeheden.
-    </p>
+<main>
+    <section>
+        <h2>Om spillet</h2>
+        <p>
+            Darksiders II er det andet spil i Darksiders-serien, udviklet af Vigil Games og udgivet af THQ den 14. august 2012 i Nordamerika.
+            Spillet er en parallel sequel til det første Darksiders. Det har tre DLC: The Abyssal Forge, Argul's Tomb og The Demon Lord Belial.
+            I 2015 blev en remastered version kaldt Darksiders II Deathinitive Edition udgivet.
+        </p>
 
-    <img src="https://w.wallhaven.cc/full/0j/wallhaven-0jlerm.jpg" alt="Darksiders 2">
+        <div class="image-container">
+            <img src="https://w.wallhaven.cc/full/nz/wallhaven-nzrjky.jpg" alt="Darksiders 2">
+        </div>
 
-    <p>
-        Spillet kombinerer action, RPG-elementer og episke boss-kampe.
-    </p>
+        <p>
+            Spillet foregår under War's 100-årige fangenskab efter Darksiders prologen. Spilleren tager kontrol over Death, den ældste og mest dødbringende af Horsemen.
+            Death starter sin rejse i The Veil, en isdækket verden styret af Crowfather, Keeper of Secrets. Undervejs møder Death udfordringer, korrupte fjender og nøglefigurer,
+            mens han forsøger at afsløre sandheden og finde den hemmelige Tree of Life.
+        </p>
 
-    <button onclick="alert('For the Horsemen!')">
-        Klik mig
-    </button>
-</section>
+        <button onclick="alert('For the Horsemen!')">Klik mig</button>
+    </section>
+</main>
 
 <footer>
     © 2026 Fan-side om Darksiders 2
